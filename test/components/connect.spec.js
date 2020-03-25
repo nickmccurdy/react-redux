@@ -10,7 +10,7 @@ import * as rtl from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 
 describe('React', () => {
-  describe('connect', () => {
+  describe.skip('connect', () => {
     const propMapper = prop => {
       switch (typeof prop) {
         case 'object':

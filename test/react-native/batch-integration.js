@@ -56,7 +56,7 @@ describe('React Native', () => {
     })
   })
 
-  describe('Subscription and update timing correctness', () => {
+  describe.skip('Subscription and update timing correctness', () => {
     it('should pass state consistently to mapState', () => {
       const store = createStore(stringBuilder)
 

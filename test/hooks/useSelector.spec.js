@@ -336,7 +336,7 @@ describe('React', () => {
           spy.mockRestore()
         })
 
-        it('allows dealing with stale props by putting a specific connected component above the hooks component', () => {
+        it.skip('allows dealing with stale props by putting a specific connected component above the hooks component', () => {
           const spy = jest.spyOn(console, 'error').mockImplementation(() => {})
 
           const Parent = () => {

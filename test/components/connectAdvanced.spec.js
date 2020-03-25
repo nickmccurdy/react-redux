@@ -5,7 +5,7 @@ import { createStore } from 'redux'
 import '@testing-library/jest-dom/extend-expect'
 
 describe('React', () => {
-  describe('connectAdvanced', () => {
+  describe.skip('connectAdvanced', () => {
     it('should map state and render on mount', () => {
       const initialState = {
         foo: 'bar'

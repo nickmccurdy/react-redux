@@ -10,7 +10,7 @@ describe('React', () => {
   describe('connect', () => {
     afterEach(() => rtl.cleanup())
 
-    it('should render on useEffect hook state update', () => {
+    it.skip('should render on useEffect hook state update', () => {
       const store = createStore((state, action) => {
         let newState =
           state !== undefined

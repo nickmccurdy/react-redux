@@ -14,7 +14,7 @@ import { createStore } from 'redux'
 import { Provider, connect } from '../../src/index.js'
 
 describe('React', () => {
-  describe('server rendering', () => {
+  describe.skip('server rendering', () => {
     function greetingReducer(state = { greeting: 'Hello' }, action) {
       return action && action.payload ? action.payload : state
     }

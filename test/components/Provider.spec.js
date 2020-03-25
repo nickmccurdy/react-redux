@@ -152,7 +152,7 @@ describe('React', () => {
       expect(tester.getByTestId('store')).toHaveTextContent('store - 101')
     })
 
-    it('should handle subscriptions correctly when there is nested Providers', () => {
+    it.skip('should handle subscriptions correctly when there is nested Providers', () => {
       const reducer = (state = 0, action) =>
         action.type === 'INC' ? state + 1 : state
 
@@ -191,7 +191,7 @@ describe('React', () => {
       expect(innerMapStateToProps).toHaveBeenCalledTimes(2)
     })
 
-    it('should pass state consistently to mapState', () => {
+    it.skip('should pass state consistently to mapState', () => {
       function stringBuilder(prev = '', action) {
         return action.type === 'APPEND' ? prev + action.body : prev
       }
@@ -313,7 +313,7 @@ describe('React', () => {
       expect(spy).toHaveBeenCalledTimes(1)
     })
 
-    it('should handle store and children change in a the same render', () => {
+    it.skip('should handle store and children change in a the same render', () => {
       const reducerA = (state = { nestedA: { value: 'expectedA' } }) => state
       const reducerB = (state = { nestedB: { value: 'expectedB' } }) => state
 
